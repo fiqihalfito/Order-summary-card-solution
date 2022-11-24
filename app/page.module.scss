@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// var
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+$font-size-p: 16px;
+$font-family: 'Red Hat Display', sans-serif;
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    max-width: 450px;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-family: $font-family;
+    box-shadow:
+        0px 26px 12px rgba(0, 0, 0, 0.05);
+
+    .cardBody {
+        padding: 1rem 3rem;
+        text-align: center;
+
+        .description {
+            padding-inline: 1rem;
+
+            h2 {
+                font-weight: 900;
+                color: $dark-blue;
+                font-size: 1.75rem;
+                // margin: 0;
+            }
+
+            p {
+                color: $desaturated-blue;
+            }
+        }
+
+        .plan {
+            background-color: $very-pale-blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 1rem;
+
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+
+            .planContent {
+                display: flex;
+
+                .planInfo {
+                    // height: 100%;
+                    margin-left: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h4 {
+                        font-weight: 900;
+                        margin: 0;
+                    }
+
+                    p {
+                        color: $desaturated-blue;
+                        margin: 0;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            a {
+                color: $bright-blue;
+                font-weight: 700;
+                text-decoration: underline;
+
+                &:hover {
+                    // color: $desaturated-blue;
+                    opacity: .75;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .buttonArea {
+            // margin-top: 1rem;
+
+            button {
+                font-family: $font-family;
+                font-size: $font-size-p;
+                width: 100%;
+                // display: block;
+                padding: 1rem;
+                border: 0;
+                border-radius: .5rem;
+
+                &.proceed {
+                    background-color: $bright-blue;
+                    color: white;
+                    font-weight: 700;
+                    cursor: pointer;
+                    box-shadow:
+                        0px 26px 12px rgba(0, 0, 0, 0.05);
+                    z-index: 9999;
+
+                    &:hover {
+                        opacity: .75;
+                    }
+                }
+
+                &.cancel {
+                    margin-top: 1rem;
+
+                    background-color: transparent;
+                    color: $desaturated-blue;
+                    font-weight: 900;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $dark-blue;
+                    }
+                }
+            }
+        }
+    }
+}
