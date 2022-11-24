@@ -57,4 +57,4 @@ I want to make clean code, easy-readable, easy-customize.
 ## Author
 
 - Github - [fiqihalfito](https://www.github.com/fiqihalfito)
-- LinkedIn - [@fiqih-alfito](https://www.linkedin.com/fiqih-alfito)
+- LinkedIn - [@fiqih-alfito](https://www.linkedin.com/fiqih-alfito/)
