@@ -7,7 +7,7 @@ body {
   background-image: url(../public/images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 -40%;
+  /* background-position: 0 -40%; */
   background-color: hsl(225, 100%, 94%);
 }
 
